@@ -6,14 +6,15 @@ try to implement raft protocal.
 ## 跟随者(Follower)
 * 任何节点在初始状态下为Follower状态。
 * 响应来自Leader的请求 TODO
-1.  更新时间戳。（时间戳为最近一次leader,candidate的心跳消息）
+    1.  更新时间戳。（时间戳为最近一次leader,candidate的心跳消息）
 * 响应来自Candidate的请求 TODO
-1.  更新时间戳。
-2.  fklsdkflasdf
+
+    1.  更新时间戳。
+    2.  fklsdkflasdf
 * 超过选举超时时间的情况之前都没有收到领导人的心跳，或者是候选人请求投票的，就自己变成候选人 TODO
-1.  更新自己的term。
+    1.  更新自己的term。
 * 响应来自客户端的请求，
-1.  将请求重定向至Leader。
+    1.  将请求重定向至Leader。
 
 ## 领导者(Leader)
 * 周期性的向所有跟随者发送心跳包（不包含日志项内容的附加日志项 RPCs）

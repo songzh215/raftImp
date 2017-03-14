@@ -9,6 +9,7 @@ try to implement raft protocal.
 1.  更新时间戳。（时间戳为最近一次leader,candidate的心跳消息）
 * 响应来自Candidate的请求 TODO
 1.  更新时间戳。
+2.  fklsdkflasdf
 * 超过选举超时时间的情况之前都没有收到领导人的心跳，或者是候选人请求投票的，就自己变成候选人 TODO
 1.  更新自己的term。
 * 响应来自客户端的请求，
